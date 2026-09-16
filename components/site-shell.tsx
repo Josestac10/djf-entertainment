@@ -23,7 +23,7 @@ export function SiteHeader() {
   return (
     <>
       <div className="border-b border-white/10 bg-black py-2 text-center text-[10px] font-semibold tracking-[0.24em] text-white/60 sm:text-xs">
-        {lang === "en" ? "SIOUX FALLS, SOUTH DAKOTA · BILINGUAL DJ + MC · ENGLISH / ESPANOL" : "SIOUX FALLS, SOUTH DAKOTA · DJ + MC BILINGUE · ENGLISH / ESPANOL"}
+        {lang === "en" ? "SIOUX FALLS, SOUTH DAKOTA · BILINGUAL DJ + MC · ENGLISH / ESPAÑOL" : "SIOUX FALLS, SOUTH DAKOTA · DJ + MC BILINGUE · ENGLISH / ESPANOL"}
       </div>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#090909]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3 md:px-10 lg:px-14">
@@ -86,7 +86,7 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 bg-black px-5 py-10 md:px-10 lg:px-14">
       <div className="mx-auto grid max-w-[1500px] gap-8 md:grid-cols-[1fr_auto] md:items-end">
         <div>
-          <div className="text-[10px] font-black tracking-[0.2em] text-[#0529ED]">SIOUX FALLS · SOUTH DAKOTA · ENGLISH / ESPANOL</div>
+          <div className="text-[10px] font-black tracking-[0.2em] text-[#0529ED]">SIOUX FALLS · SOUTH DAKOTA · ENGLISH / ESPAÑOL</div>
           <img src="/media/djf-entertainment.png" alt="DJ Foca" className="mt-4 h-20 w-auto max-w-[190px] object-contain object-left" />
           <p className="mt-3 max-w-lg text-sm leading-6 text-white/45">
             {es ? "DJF Entertainment - Tu evento. Tu vision. Nuestra pasion." : "DJF Entertainment - Your Event. Your Vision. Our Passion."}
