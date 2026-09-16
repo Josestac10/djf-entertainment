@@ -23,7 +23,7 @@ export function SiteHeader() {
   return (
     <>
       <div className="border-b border-white/10 bg-black py-2 text-center text-[10px] font-semibold tracking-[0.24em] text-white/60 sm:text-xs">
-        {lang === "en" ? "SIOUX FALLS, SOUTH DAKOTA · BILINGUAL DJ + MC · ENGLISH / ESPAÑOL" : "SIOUX FALLS, SOUTH DAKOTA · DJ + MC BILINGUE · ENGLISH / ESPANOL"}
+        {lang === "en" ? "SIOUX FALLS, SOUTH DAKOTA · BILINGUAL DJ + MC · ENGLISH / ESPAÑOL" : "SIOUX FALLS, SOUTH DAKOTA · DJ + MC BILINGUE · ENGLISH / ESPAÑOL"}
       </div>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#090909]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3 md:px-10 lg:px-14">
@@ -69,7 +69,7 @@ export function SiteHeader() {
                 </Link>
               ))}
               <button onClick={toggleLang} className="mt-2 flex items-center gap-2 rounded-xl px-3 py-3 text-left text-sm font-semibold text-[#0529ED]">
-                <Globe2 size={16} /> {lang === "en" ? "Cambiar a Espanol" : "Switch to English"}
+                <Globe2 size={16} /> {lang === "en" ? "Cambiar a Español" : "Switch to English"}
               </button>
             </div>
           </div>
