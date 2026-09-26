@@ -24,7 +24,6 @@ export default function AboutPage() {
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]">
             <img src="/media/corporate-dj-portrait.webp" alt="DJ Foca" className="aspect-[4/5] h-full w-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
-            <div className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-black/60 px-4 py-2 text-[9px] font-black tracking-[0.17em] text-[#0529ED] backdrop-blur">DJ FOCA · SIOUX FALLS, SOUTH DAKOTA</div>
           </div>
 
           <div className="lg:pl-6">
@@ -48,13 +47,20 @@ export default function AboutPage() {
 
       <section className="border-y border-white/10 bg-white/[0.035] px-5 py-20 md:px-10 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-[1350px] gap-12 lg:grid-cols-[.72fr_1.28fr] lg:items-center">
-          <div className="relative grid min-h-[430px] place-items-center overflow-hidden rounded-[2rem] border border-white/10 bg-black">
-            <div className="hero-grain absolute inset-0 opacity-20" />
-            <div className="relative text-center">
-              <div className="text-[clamp(8rem,18vw,15rem)] font-black italic leading-none text-[#0529ED]">A</div>
-              <div className="mt-1 text-[10px] font-black tracking-[0.25em] text-white/45">ABIGAIL SANTA CRUZ</div>
-            </div>
-          </div>
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-black">
+
+  <img
+    src="/media/abigail-santa-cruz.webp"
+    alt="Abigail Santa Cruz - Booking Manager & Wedding Coordinator"
+    className="aspect-[4/5] h-full w-full object-cover object-center"
+  />
+
+  {/* Overlay para integrar la foto con el diseño */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+  
+
+</div>
 
           <div>
             <div className="text-[10px] font-black tracking-[0.22em] text-[#0529ED]">02 · {es ? "BOOKING MANAGER Y COORDINADORA DE BODAS" : "BOOKING MANAGER & WEDDING COORDINATOR"}</div>
