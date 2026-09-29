@@ -62,16 +62,16 @@ export default function PackagesPage() {
       {/* HERO */}
       <PageHero
         kicker={{
-          en: "PRICING & PACKAGES",
-          es: "PRECIOS Y PAQUETES",
+          en: "WEDDING DJ PRICING",
+          es: "PRECIOS DE DJ PARA BODAS",
         }}
         title={{
-          en: "Choose Your Setup",
-          es: "Elige tu setup",
+          en: "Wedding DJ Packages in Sioux Falls",
+          es: "Paquetes de DJ para Bodas en Sioux Falls",
         }}
         text={{
-          en: "Choose the setup that best fits your event. Final pricing may vary depending on event type, hours of service, venue requirements and selected add-ons.",
-          es: "Elige el setup que mejor se adapte a tu evento. El precio final puede variar según el tipo de evento, las horas de servicio, los requisitos del lugar y los extras seleccionados.",
+          en: "Explore DJF Entertainment wedding packages with professional event equipment, dance floor lighting and wireless microphones. Packages start at $1,500.",
+          es: "Conoce los paquetes para bodas de DJF Entertainment con equipo profesional para eventos, iluminación para la pista y micrófonos inalámbricos. Los paquetes comienzan desde $1,500.",
         }}
         image="/media/dj-formal-wide.webp"
         imagePosition="center 44%"
@@ -83,21 +83,34 @@ export default function PackagesPage() {
           <div className="grid gap-8 border-b border-white/10 pb-14 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
             <div>
               <div className="text-[10px] font-black tracking-[0.22em] text-[#0529ED]">
-                {es ? "PAQUETES DJF" : "DJF PACKAGES"}
+                {es ? "PAQUETES PARA BODAS" : "WEDDING PACKAGES"}
               </div>
 
               <h2 className="mt-3 text-4xl font-black uppercase leading-[0.92] tracking-[-0.05em] md:text-6xl">
                 {es
-                  ? "Un setup para cada evento."
-                  : "A setup for every event."}
+                  ? "Elige el setup para tu celebración."
+                  : "Choose the setup for your celebration."}
               </h2>
             </div>
 
-            <p className="max-w-2xl text-base leading-8 text-white/55 lg:justify-self-end">
-              {es
-                ? "Cada evento es diferente. Los precios mostrados son precios iniciales y pueden variar según la duración, el tipo de evento, el lugar y los servicios adicionales seleccionados."
-                : "Every event is different. The prices shown are starting prices and may vary depending on duration, event type, venue requirements and selected add-ons."}
-            </p>
+            <div>
+              <p className="max-w-2xl text-base leading-8 text-white/55">
+                {es
+                  ? "DJF Entertainment ofrece dos opciones de setup para bodas. Los precios mostrados son precios iniciales y pueden variar según la duración del servicio, las necesidades del lugar y los servicios adicionales seleccionados."
+                  : "DJF Entertainment offers two wedding setup options. Prices shown are starting prices and may vary depending on service duration, venue requirements and selected add-ons."}
+              </p>
+
+              <Link
+                href="/events/weddings"
+                className="mt-5 inline-flex items-center gap-2 text-xs font-black tracking-[0.14em] text-[#0529ED]"
+              >
+                {es
+                  ? "CONOCER EL SERVICIO DE BODAS"
+                  : "EXPLORE WEDDING DJ SERVICES"}
+
+                <ArrowRight size={15} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -121,9 +134,9 @@ export default function PackagesPage() {
                     <Image
                       src={pkg.image}
                       alt={
-                        es
-                          ? `Setup del paquete ${pkg.number} de DJF Entertainment`
-                          : `DJF Entertainment package ${pkg.number} setup`
+                        pkg.number === "01"
+                          ? "Basic Wedding Package DJ setup by DJF Entertainment"
+                          : "Premium Wedding Package DJ setup by DJF Entertainment"
                       }
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
@@ -230,8 +243,8 @@ export default function PackagesPage() {
 
               <p className="mt-4 max-w-2xl text-sm leading-7 text-white/55">
                 {es
-                  ? "Puedes agregar servicios y mejoras adicionales según las necesidades de tu evento. Consulta las opciones disponibles cuando solicites tu cotización."
-                  : "Additional services and upgrades can be added depending on your event needs. Ask about available add-ons when requesting your quote."}
+                  ? "Los paquetes pueden personalizarse con servicios y mejoras adicionales según las necesidades de tu boda, el lugar y el tipo de experiencia que quieras crear. Consulta las opciones disponibles al solicitar tu cotización."
+                  : "Wedding packages can be customized with additional services and upgrades depending on your venue, event needs and the experience you want to create. Ask about available add-ons when requesting your quote."}
               </p>
 
               <Link

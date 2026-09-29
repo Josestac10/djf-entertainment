@@ -1,19 +1,55 @@
 import { EventDetail } from "../../../components/event-detail";
 
 export default function WeddingsPage() {
-  return <EventDetail
-    kicker={{ en: "WEDDING DJ", es: "DJ PARA BODAS" }}
-    title={{ en: "Weddings", es: "Bodas" }}
-    text={{ en: "A polished soundtrack for the moments that matter, followed by the party everyone remembers.", es: "Una banda sonora cuidada para los momentos importantes y una fiesta que todos recuerden." }}
-    image="/media/wedding-dj-smile.webp"
-    imagePosition="center 44%"
-    introTitle={{ en: "From the first entrance to the last song.", es: "Desde la primera entrada hasta la última canción." }}
-    introText={{ en: "DJ Foca adapts the music to the couple, families and guests rather than forcing every wedding into the same playlist. The goal is a smooth flow, a packed dance floor and a night that still feels personal.", es: "DJ Foca adapta la música a la pareja, las familias y los invitados, sin convertir cada boda en la misma playlist. El objetivo es lograr una transición fluida, una pista llena y una noche que siga sintiéndose personal." }}
-    bullets={[
-      { en: "Music planning around your must-play and do-not-play preferences.", es: "Planificación musical según tus canciones imprescindibles y las que prefieres evitar." },
-      { en: "Bilingual English / Spanish experience when the crowd needs it.", es: "Experiencia bilingüe inglés / español cuando el público lo necesite." },
-      { en: "Reggaeton, hip-hop, country and open-format flexibility.", es: "Reggaeton, hip-hop, country y flexibilidad open format." },
-      { en: "Professional setup and event-focused presentation.", es: "Montaje profesional y una presentación enfocada en el evento." },
-    ]}
-  />;
+  return (
+    <EventDetail
+      kicker={{
+        en: "WEDDING DJ IN SIOUX FALLS",
+        es: "DJ PARA BODAS EN SIOUX FALLS",
+      }}
+      title={{
+        en: "Wedding DJ in Sioux Falls",
+        es: "DJ para Bodas en Sioux Falls",
+      }}
+      text={{
+        en: "Bilingual DJ and MC services for weddings in Sioux Falls, with professional sound, dance floor lighting and wedding packages built for your celebration.",
+        es: "Servicios bilingües de DJ y MC para bodas en Sioux Falls, con sonido profesional, iluminación para la pista y paquetes pensados para tu celebración.",
+      }}
+      image="/media/wedding-dj-smile.webp"
+      imagePosition="center 44%"
+      introTitle={{
+        en: "Music, energy and a setup built for your wedding.",
+        es: "Música, energía y un setup pensado para tu boda.",
+      }}
+      introText={{
+        en: "DJ Foca brings an open-format approach to weddings, combining music, bilingual MC support and professional event equipment. From cumbia and reggaeton to hip-hop, country and more, the music is adapted to the couple and the people on the dance floor.",
+        es: "DJ Foca lleva un enfoque open-format a las bodas, combinando música, apoyo bilingüe como MC y equipo profesional para eventos. Desde cumbia y reggaetón hasta hip-hop, country y más, la música se adapta a la pareja y a las personas en la pista de baile.",
+      }}
+      bullets={[
+        {
+          en: "Bilingual English / Spanish DJ and MC service.",
+          es: "Servicio bilingüe de DJ y MC en inglés y español.",
+        },
+        {
+          en: "Professional sound system and wireless microphones.",
+          es: "Sistema de sonido profesional y micrófonos inalámbricos.",
+        },
+        {
+          en: "Dance floor lighting with Basic and Premium wedding package options.",
+          es: "Iluminación para la pista con opciones Basic y Premium Wedding Package.",
+        },
+        {
+          en: "Open-format music including cumbia, reggaeton, hip-hop, country and more.",
+          es: "Música open-format que incluye cumbia, reggaetón, hip-hop, country y más.",
+        },
+      ]}
+      secondaryAction={{
+        href: "/packages",
+        label: {
+          en: "VIEW WEDDING PACKAGES",
+          es: "VER PAQUETES DE BODA",
+        },
+      }}
+    />
+  );
 }

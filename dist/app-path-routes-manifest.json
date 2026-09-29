@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/api/contact/route": "/api/contact",
+  "/about/page": "/about",
+  "/page": "/",
+  "/contact/page": "/contact",
+  "/events/page": "/events",
+  "/gallery/page": "/gallery",
+  "/packages/page": "/packages",
+  "/why-djf/page": "/why-djf",
+  "/events/private-events/page": "/events/private-events",
+  "/events/bars/page": "/events/bars",
+  "/events/corporate/page": "/events/corporate",
+  "/events/weddings/page": "/events/weddings"
+}

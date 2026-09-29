@@ -1,12 +1,14 @@
 "use client";
-
+import Image from "next/image";
 import { FormEvent, useState } from "react";
+
 import {
   CalendarDays,
   Instagram,
-  MessageCircle,
+  MapPin,
   Send,
 } from "lucide-react";
+
 import { useLanguage } from "../../components/language-provider";
 import { PageHero } from "../../components/page-hero";
 
@@ -62,16 +64,16 @@ export default function ContactPage() {
     <>
       <PageHero
         kicker={{
-          en: "YOUR DATE COMES FIRST",
-          es: "TU FECHA ES LO PRIMERO",
+          en: "BOOK WITH DJF ENTERTAINMENT",
+          es: "RESERVA CON DJF ENTERTAINMENT",
         }}
         title={{
-          en: "Check Availability",
-          es: "Consultar disponibilidad",
+          en: "Book DJ Foca in Sioux Falls",
+          es: "Reserva a DJ Foca en Sioux Falls",
         }}
         text={{
-          en: "Share your event details so DJF Entertainment can follow up with availability and a custom quote.",
-          es: "Comparte los detalles de tu evento para que DJF Entertainment pueda responder con disponibilidad y una cotización personalizada.",
+          en: "Tell us about your wedding, corporate event, private event or bar booking. DJF Entertainment will follow up with availability and a custom quote.",
+          es: "Cuéntanos sobre tu boda, evento corporativo, evento privado o reserva para un bar. DJF Entertainment responderá con disponibilidad y una cotización personalizada.",
         }}
         image="/media/wedding-dj-smile.webp"
         imagePosition="center 44%"
@@ -130,6 +132,13 @@ export default function ContactPage() {
                   defaultValue=""
                   className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white outline-none transition focus:border-[#0529ED]"
                 >
+                  <option
+                    value=""
+                    disabled
+                    className="bg-[#101014] text-white/50"
+                  >
+                    {es ? "Selecciona una opción" : "Select an option"}
+                  </option>
                   <option
                     value="Email"
                     className="bg-[#101014] text-white"
@@ -339,31 +348,35 @@ export default function ContactPage() {
                   </a>
                 </div>
 
-                <div className="rounded-2xl bg-white p-3">
-                  <img
+                <div className="relative aspect-square overflow-hidden rounded-2xl bg-white p-3">
+                  <Image
                     src="/media/social-qr.webp"
                     alt="DJ Foca social media QR code"
-                    className="aspect-square w-full object-contain"
+                    fill
+                    sizes="120px"
+                    className="object-contain p-3"
                   />
                 </div>
               </div>
             </div>
-
-            {/* SMS */}
+            {/* LOCATION */}
             <div className="rounded-[2rem] border border-white/10 bg-white/[0.025] p-7">
-              <MessageCircle className="text-[#0529ED]" />
+              <MapPin className="text-[#0529ED]" />
 
-              <h3 className="mt-4 text-xl font-black uppercase">
-                SMS / iMessage
+              <div className="mt-4 text-[10px] font-black tracking-[0.2em] text-[#0529ED]">
+                {es ? "UBICACIÓN" : "LOCATION"}
+              </div>
+
+              <h3 className="mt-3 text-xl font-black uppercase">
+                Sioux Falls, South Dakota
               </h3>
 
-              <p className="mt-2 text-sm leading-6 text-white/45">
+              <p className="mt-3 text-sm leading-6 text-white/45">
                 {es
-                  ? "Cuando se agregue el número comercial, este acceso podrá abrir un mensaje directamente desde el móvil."
-                  : "Once the business phone number is added, this can open a text message directly from a mobile device."}
+                  ? "DJF Entertainment tiene base en Sioux Falls, South Dakota. Comparte la ubicación de tu evento en el formulario para solicitar disponibilidad y una cotización."
+                  : "DJF Entertainment is based in Sioux Falls, South Dakota. Share your event location in the form to request availability and a custom quote."}
               </p>
             </div>
-
           </aside>
         </div>
       </section>

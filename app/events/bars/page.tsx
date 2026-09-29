@@ -1,19 +1,48 @@
 import { EventDetail } from "../../../components/event-detail";
 
 export default function BarsPage() {
-  return <EventDetail
-    kicker={{ en: "BAR EVENTS", es: "EVENTOS EN BARES" }}
-    title={{ en: "Bars", es: "Bares" }}
-    text={{ en: "DJ service for bars, quoted around the event details and what the venue needs.", es: "Servicio de DJ para bares, cotizado según los detalles del evento y lo que necesite el local." }}
-    image="/media/bar-action.webp"
-    imagePosition="center 42%"
-    introTitle={{ en: "DJ service built around the night.", es: "Servicio de DJ adaptado a la noche." }}
-    introText={{ en: "Tell DJF Entertainment about the bar event, the hours you need, the lighting you want and any extras you would like included. Those details are used to prepare the quote.", es: "Cuéntale a DJF Entertainment sobre el evento en el bar, las horas que necesitas, las luces que quieres y cualquier extra que quieras incluir. Esos detalles se usan para preparar la cotización." }}
-    bullets={[
-      { en: "Pricing based on the event details.", es: "Precio basado en los detalles del evento." },
-      { en: "Service hours included in the quote.", es: "Horas de servicio incluidas en la cotización." },
-      { en: "Lighting based on what you request.", es: "Luces según lo que solicites." },
-      { en: "Additional extras can be included in the quote.", es: "Los extras adicionales pueden incluirse en la cotización." },
-    ]}
-  />;
+  return (
+    <EventDetail
+      kicker={{
+        en: "BAR & NIGHTLIFE DJ IN SIOUX FALLS",
+        es: "DJ PARA BARES Y NIGHTLIFE EN SIOUX FALLS",
+      }}
+      title={{
+        en: "Bar & Nightlife DJ in Sioux Falls",
+        es: "DJ para Bares y Nightlife en Sioux Falls",
+      }}
+      text={{
+        en: "Open-format DJ services for bars and nightlife events in Sioux Falls, with music and energy adapted to the venue, the crowd and the atmosphere of the night.",
+        es: "Servicios de DJ open-format para bares y eventos nocturnos en Sioux Falls, con música y energía adaptadas al local, al público y al ambiente de la noche.",
+      }}
+      image="/media/bar-action.webp"
+      imagePosition="center 48%"
+      introTitle={{
+        en: "Read the room. Build the energy. Keep the night moving.",
+        es: "Leer al público. Subir la energía. Mantener la noche en movimiento.",
+      }}
+      introText={{
+        en: "Bar and nightlife sets need flexibility. DJ Foca uses an open-format approach to move between genres, respond to the crowd and keep the music aligned with the energy of the venue throughout the night.",
+        es: "Los sets para bares y nightlife necesitan flexibilidad. DJ Foca utiliza un enfoque open-format para moverse entre géneros, responder al público y mantener la música alineada con la energía del local durante toda la noche.",
+      }}
+      bullets={[
+        {
+          en: "Open-format DJ sets adapted to the crowd.",
+          es: "Sets open-format adaptados al público.",
+        },
+        {
+          en: "Music that can move between Latin, hip-hop, country and other styles.",
+          es: "Música que puede moverse entre ritmos latinos, hip-hop, country y otros estilos.",
+        },
+        {
+          en: "Flexible pacing based on the venue and the energy of the night.",
+          es: "Ritmo flexible según el local y la energía de la noche.",
+        },
+        {
+          en: "English / Spanish DJ and MC capability when the event calls for it.",
+          es: "Servicio de DJ y MC en inglés y español cuando el evento lo requiera.",
+        },
+      ]}
+    />
+  );
 }
