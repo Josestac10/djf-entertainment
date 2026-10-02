@@ -41,6 +41,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]">
             <Image
               src="/media/corporate-dj-portrait.webp"
+              //src="/media/photographsbyanna-132.jpg"
               alt="DJ Foca, bilingual DJ and MC in Sioux Falls, South Dakota"
               fill
               sizes="(max-width: 1023px) 100vw, 40vw"

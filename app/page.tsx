@@ -27,6 +27,7 @@ const events = [
     es: "Eventos corporativos",
     image: "/media/corporate-dj-setup.webp",
   },
+
   {
     href: "/events/private-events",
     en: "Private Events",
@@ -332,6 +333,7 @@ export default function Home() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10">
             <Image
               src="/media/corporate-dj-portrait.webp"
+              //src="/media/photographsbyanna-118.jpg"
               alt="DJ Foca, bilingual DJ and MC in Sioux Falls, South Dakota"
               fill
               sizes="(max-width: 1023px) 100vw, 45vw"

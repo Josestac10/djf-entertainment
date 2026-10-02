@@ -36,6 +36,7 @@ const cards = [
     textEs:
       "Servicios profesionales de DJ con música adaptada al formato, público y ambiente del evento.",
     image: "/media/corporate-dj-setup.webp",
+    //image: "/media/photographsbyanna-111.jpg",
     altEn: "DJF Entertainment corporate event DJ setup",
     altEs: "Setup de DJF Entertainment para eventos corporativos",
   },
