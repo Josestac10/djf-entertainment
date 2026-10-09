@@ -12,7 +12,7 @@ const packages = [
   {
     number: "01",
     name: "Basic Wedding Package",
-    image: "/media/package-01-basic.jpeg",
+    image: "/media/photographsbyanna-76.jpg",
     price: "$1,500",
     items: [
       {
@@ -32,7 +32,7 @@ const packages = [
   {
     number: "02",
     name: "Premium Wedding Package",
-    image: "/media/package-02-enhanced.jpeg",
+    image: "/media/photographsbyanna-108.jpg",
     price: "$2,000",
     items: [
       {
