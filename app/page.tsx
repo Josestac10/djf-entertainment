@@ -88,14 +88,18 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-[82vh] items-end overflow-hidden">
+      <section className="relative flex min-h-[min(82svh,720px)] items-end overflow-hidden md:min-h-[82vh]">
         <Image
           src="/media/wedding-party.webp"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="
+            object-cover
+            object-[93%_center]
+            md:object-center
+          "
         />
 
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.92)_0%,rgba(0,0,0,.6)_48%,rgba(0,0,0,.22)_100%)]" />
