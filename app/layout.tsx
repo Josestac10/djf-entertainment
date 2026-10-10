@@ -7,7 +7,7 @@ import { SiteShell } from "../components/site-shell";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://djf-entertainment.vercel.app";
+  "https://djfmusic.com";
 
 const siteTitle = "DJ Foca | Bilingual DJ in South Dakota";
 
