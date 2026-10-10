@@ -123,15 +123,45 @@ export default function Home() {
 
             <h2 className="text-[clamp(3.7rem,10vw,9rem)] font-black uppercase leading-[0.78] tracking-[-0.075em]">
               <span className="block">
-                {es ? "TU EVENTO." : "YOUR EVENT."}
+                {es ? (
+                  <>
+                    <span className="block sm:inline">TU</span>{" "}
+                    <span className="block sm:inline">EVENTO.</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="block sm:inline">YOUR</span>{" "}
+                    <span className="block sm:inline">EVENT.</span>
+                  </>
+                )}
               </span>
 
               <span className="block text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,.72)]">
-                {es ? "TU MÚSICA." : "YOUR MUSIC."}
+                {es ? (
+                  <>
+                    <span className="block sm:inline">TU</span>{" "}
+                    <span className="block sm:inline">MÚSICA.</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="block sm:inline">YOUR</span>{" "}
+                    <span className="block sm:inline">MUSIC.</span>
+                  </>
+                )}
               </span>
 
               <span className="block">
-                {es ? "TU NOCHE." : "YOUR NIGHT."}
+                {es ? (
+                  <>
+                    <span className="block sm:inline">TU</span>{" "}
+                    <span className="block sm:inline">NOCHE.</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="block sm:inline">YOUR</span>{" "}
+                    <span className="block sm:inline">NIGHT.</span>
+                  </>
+                )}
               </span>
             </h2>
 
