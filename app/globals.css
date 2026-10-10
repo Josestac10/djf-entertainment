@@ -13,8 +13,6 @@
 html {
   scroll-behavior: smooth;
   background: #090909;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 body {

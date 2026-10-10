@@ -121,24 +121,16 @@ export default function Home() {
                 : "BILINGUAL DJ & MC IN SIOUX FALLS, SOUTH DAKOTA"}
             </h1>
 
-            <h2
-              className="
-                text-[clamp(3rem,13.5vw,3.6rem)]
-                font-black uppercase
-                leading-[0.78]
-                tracking-[-0.075em]
-                md:text-[clamp(3.7rem,10vw,9rem)]
-              "
-            >
-              <span className="block whitespace-nowrap">
+            <h2 className="text-[clamp(3.7rem,10vw,9rem)] font-black uppercase leading-[0.78] tracking-[-0.075em]">
+              <span className="block">
                 {es ? "TU EVENTO." : "YOUR EVENT."}
               </span>
 
-              <span className="block whitespace-nowrap text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,.72)]">
+              <span className="block text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,.72)]">
                 {es ? "TU MÚSICA." : "YOUR MUSIC."}
               </span>
 
-              <span className="block whitespace-nowrap">
+              <span className="block">
                 {es ? "TU NOCHE." : "YOUR NIGHT."}
               </span>
             </h2>
